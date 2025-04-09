@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_53db340858135a28538143cc65a828ab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_53db340858135a28538143cc65a828ab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_53db340858135a28538143cc65a828ab = L.map(
+                "map_53db340858135a28538143cc65a828ab",
+                {
+                    center: [39.9612, -82.9988],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0325ae502054fd9cddcbcaf3a370df4b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0325ae502054fd9cddcbcaf3a370df4b.addTo(map_53db340858135a28538143cc65a828ab);
+        
+    
+            var feature_group_e2e56b6d53197fd8ab02208569761ddd = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_6c6283277340f30cdd6170e1e54572b3 = L.marker(
+                [39.92701566938914, -83.12057224165868],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_cc0ee5e6998ba37a3a7b35714bad8ac8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6c6283277340f30cdd6170e1e54572b3.setIcon(icon_cc0ee5e6998ba37a3a7b35714bad8ac8);
+        
+    
+        var popup_6d3f08311bde22c2885835dc260191d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e56c3f6c342f09e1fbdc030c79b317f = $(`<div id="html_8e56c3f6c342f09e1fbdc030c79b317f" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_6d3f08311bde22c2885835dc260191d6.setContent(html_8e56c3f6c342f09e1fbdc030c79b317f);
+            
+        
+
+        marker_6c6283277340f30cdd6170e1e54572b3.bindPopup(popup_6d3f08311bde22c2885835dc260191d6)
+        ;
+
+        
+    
+    
+            marker_6c6283277340f30cdd6170e1e54572b3.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7bd2f4badef83b3e5df3d374d2b476e2 = L.marker(
+                [39.98338272906851, -83.14497024826223],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_d7d47759536d3190372ce68a8593cc36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7bd2f4badef83b3e5df3d374d2b476e2.setIcon(icon_d7d47759536d3190372ce68a8593cc36);
+        
+    
+        var popup_1980a240b21aa4abb07d056662bbfcd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79b7bac51143c7605a077b8de3ecd5c6 = $(`<div id="html_79b7bac51143c7605a077b8de3ecd5c6" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_1980a240b21aa4abb07d056662bbfcd1.setContent(html_79b7bac51143c7605a077b8de3ecd5c6);
+            
+        
+
+        marker_7bd2f4badef83b3e5df3d374d2b476e2.bindPopup(popup_1980a240b21aa4abb07d056662bbfcd1)
+        ;
+
+        
+    
+    
+            marker_7bd2f4badef83b3e5df3d374d2b476e2.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f4fa666b4edf0b63cbc2e2f30f14eb81 = L.marker(
+                [40.060543991981305, -82.91320155839588],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_15002e57bd906e928270f5bd81ca8cae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f4fa666b4edf0b63cbc2e2f30f14eb81.setIcon(icon_15002e57bd906e928270f5bd81ca8cae);
+        
+    
+        var popup_5be77f2d2cc5e922449196a0a960a708 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a99bc3245876698e81a36578de747239 = $(`<div id="html_a99bc3245876698e81a36578de747239" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_5be77f2d2cc5e922449196a0a960a708.setContent(html_a99bc3245876698e81a36578de747239);
+            
+        
+
+        marker_f4fa666b4edf0b63cbc2e2f30f14eb81.bindPopup(popup_5be77f2d2cc5e922449196a0a960a708)
+        ;
+
+        
+    
+    
+            marker_f4fa666b4edf0b63cbc2e2f30f14eb81.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7f689b3ab0dbe79bad91512a691373a2 = L.marker(
+                [40.067242529472544, -83.08978455094109],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_10bb5b6e3dc159f3827affcf7435cccd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7f689b3ab0dbe79bad91512a691373a2.setIcon(icon_10bb5b6e3dc159f3827affcf7435cccd);
+        
+    
+        var popup_b8b7bd92b2db98f0b549a3a16611f8bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f618b2eeb8be6a8a76c92ea93ac6d69d = $(`<div id="html_f618b2eeb8be6a8a76c92ea93ac6d69d" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_b8b7bd92b2db98f0b549a3a16611f8bc.setContent(html_f618b2eeb8be6a8a76c92ea93ac6d69d);
+            
+        
+
+        marker_7f689b3ab0dbe79bad91512a691373a2.bindPopup(popup_b8b7bd92b2db98f0b549a3a16611f8bc)
+        ;
+
+        
+    
+    
+            marker_7f689b3ab0dbe79bad91512a691373a2.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_02cbc5e12c5386818e27b37377f11253 = L.marker(
+                [40.16506414924605, -83.01580583752943],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_9fc3fc4969f09358f075d7629e8273e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_02cbc5e12c5386818e27b37377f11253.setIcon(icon_9fc3fc4969f09358f075d7629e8273e8);
+        
+    
+        var popup_514b1aa2e90289d849c94ceec85e2eb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f13ce2a9d7d83039ea8ede2f465e1f2 = $(`<div id="html_3f13ce2a9d7d83039ea8ede2f465e1f2" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_514b1aa2e90289d849c94ceec85e2eb0.setContent(html_3f13ce2a9d7d83039ea8ede2f465e1f2);
+            
+        
+
+        marker_02cbc5e12c5386818e27b37377f11253.bindPopup(popup_514b1aa2e90289d849c94ceec85e2eb0)
+        ;
+
+        
+    
+    
+            marker_02cbc5e12c5386818e27b37377f11253.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9d8a78a4282d15ffb53bcb75bbd8c9f1 = L.marker(
+                [40.26600630830465, -83.0735201149048],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_80a741fb795504db67c1fe89cd268010 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9d8a78a4282d15ffb53bcb75bbd8c9f1.setIcon(icon_80a741fb795504db67c1fe89cd268010);
+        
+    
+        var popup_021c558dcb9554beae558f03cd4b8372 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_462196edeeb1eeb6ffad86258505f290 = $(`<div id="html_462196edeeb1eeb6ffad86258505f290" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_021c558dcb9554beae558f03cd4b8372.setContent(html_462196edeeb1eeb6ffad86258505f290);
+            
+        
+
+        marker_9d8a78a4282d15ffb53bcb75bbd8c9f1.bindPopup(popup_021c558dcb9554beae558f03cd4b8372)
+        ;
+
+        
+    
+    
+            marker_9d8a78a4282d15ffb53bcb75bbd8c9f1.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c8153e2b97a9f9883a33112455d9147e = L.marker(
+                [40.11123547454942, -82.92389413767314],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_587dd7b90b9397f4ac245918ab1c352b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c8153e2b97a9f9883a33112455d9147e.setIcon(icon_587dd7b90b9397f4ac245918ab1c352b);
+        
+    
+        var popup_af35ce70bdfb358d0f0465320232cc45 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b917b8cf23318c6fdeaf4b0b54830c5b = $(`<div id="html_b917b8cf23318c6fdeaf4b0b54830c5b" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_af35ce70bdfb358d0f0465320232cc45.setContent(html_b917b8cf23318c6fdeaf4b0b54830c5b);
+            
+        
+
+        marker_c8153e2b97a9f9883a33112455d9147e.bindPopup(popup_af35ce70bdfb358d0f0465320232cc45)
+        ;
+
+        
+    
+    
+            marker_c8153e2b97a9f9883a33112455d9147e.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_742e82c9b9e3d06dee345a074e65ab2e = L.marker(
+                [40.0739290403255, -83.1375870165969],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_f298cc5902ec6c328c904c3433596d39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_742e82c9b9e3d06dee345a074e65ab2e.setIcon(icon_f298cc5902ec6c328c904c3433596d39);
+        
+    
+        var popup_7dff7ecb1795bfaa3fa9172dd98a808e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cd18b3b019a29d93cbb9847a65eb5b6 = $(`<div id="html_6cd18b3b019a29d93cbb9847a65eb5b6" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_7dff7ecb1795bfaa3fa9172dd98a808e.setContent(html_6cd18b3b019a29d93cbb9847a65eb5b6);
+            
+        
+
+        marker_742e82c9b9e3d06dee345a074e65ab2e.bindPopup(popup_7dff7ecb1795bfaa3fa9172dd98a808e)
+        ;
+
+        
+    
+    
+            marker_742e82c9b9e3d06dee345a074e65ab2e.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e33a9efee66ebfd3f377e4dcf0808297 = L.marker(
+                [40.12337927332659, -83.087069194881],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_dbcee7eb2483f433f91f0d5652f3b10c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e33a9efee66ebfd3f377e4dcf0808297.setIcon(icon_dbcee7eb2483f433f91f0d5652f3b10c);
+        
+    
+        var popup_ae952437f5f8d6151bc83d69b8de6808 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8103e1bc0f3239a3e7821ebe05f2690 = $(`<div id="html_e8103e1bc0f3239a3e7821ebe05f2690" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_ae952437f5f8d6151bc83d69b8de6808.setContent(html_e8103e1bc0f3239a3e7821ebe05f2690);
+            
+        
+
+        marker_e33a9efee66ebfd3f377e4dcf0808297.bindPopup(popup_ae952437f5f8d6151bc83d69b8de6808)
+        ;
+
+        
+    
+    
+            marker_e33a9efee66ebfd3f377e4dcf0808297.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_55585c4fbcfa0af4d9f6ae7754ee7e57 = L.marker(
+                [39.87526417550312, -83.04276647924063],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_4f3d2179c3fc2e8c2e19e858dbb0f414 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_55585c4fbcfa0af4d9f6ae7754ee7e57.setIcon(icon_4f3d2179c3fc2e8c2e19e858dbb0f414);
+        
+    
+        var popup_5537526c7f66f741cf5eaf3dec7deb5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_573662dab704f8f3c1457dd46d85ae6f = $(`<div id="html_573662dab704f8f3c1457dd46d85ae6f" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_5537526c7f66f741cf5eaf3dec7deb5a.setContent(html_573662dab704f8f3c1457dd46d85ae6f);
+            
+        
+
+        marker_55585c4fbcfa0af4d9f6ae7754ee7e57.bindPopup(popup_5537526c7f66f741cf5eaf3dec7deb5a)
+        ;
+
+        
+    
+    
+            marker_55585c4fbcfa0af4d9f6ae7754ee7e57.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a550df5311f69a4afc8d3db593b03d4c = L.marker(
+                [39.95362847541222, -82.90047965654101],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_fa87f61394caba00574f9691aac7e407 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a550df5311f69a4afc8d3db593b03d4c.setIcon(icon_fa87f61394caba00574f9691aac7e407);
+        
+    
+        var popup_25ac7733775c7b435076367ee6cefacd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42079504e041a275958264fce080a7e1 = $(`<div id="html_42079504e041a275958264fce080a7e1" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_25ac7733775c7b435076367ee6cefacd.setContent(html_42079504e041a275958264fce080a7e1);
+            
+        
+
+        marker_a550df5311f69a4afc8d3db593b03d4c.bindPopup(popup_25ac7733775c7b435076367ee6cefacd)
+        ;
+
+        
+    
+    
+            marker_a550df5311f69a4afc8d3db593b03d4c.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b5a423b160920717bcb8fa112089057e = L.marker(
+                [39.939133205362786, -82.78527700992774],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_76e4244fcec006f698545c49208745c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b5a423b160920717bcb8fa112089057e.setIcon(icon_76e4244fcec006f698545c49208745c3);
+        
+    
+        var popup_725f0bf34cb3d2fd8e889d26c85de791 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc33c32ec86d093440f35b1c3ecd95de = $(`<div id="html_bc33c32ec86d093440f35b1c3ecd95de" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_725f0bf34cb3d2fd8e889d26c85de791.setContent(html_bc33c32ec86d093440f35b1c3ecd95de);
+            
+        
+
+        marker_b5a423b160920717bcb8fa112089057e.bindPopup(popup_725f0bf34cb3d2fd8e889d26c85de791)
+        ;
+
+        
+    
+    
+            marker_b5a423b160920717bcb8fa112089057e.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_25c103ddbfa042d0e4750d5e23f8c74a = L.marker(
+                [39.8523269379684, -82.82408123290374],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_a97a1ca304fc7cc3efa64abba140c2d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_25c103ddbfa042d0e4750d5e23f8c74a.setIcon(icon_a97a1ca304fc7cc3efa64abba140c2d0);
+        
+    
+        var popup_0a3904e430a826fe8b481463cf7be888 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a59b0697e8a6fc4c743c3a630f222098 = $(`<div id="html_a59b0697e8a6fc4c743c3a630f222098" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_0a3904e430a826fe8b481463cf7be888.setContent(html_a59b0697e8a6fc4c743c3a630f222098);
+            
+        
+
+        marker_25c103ddbfa042d0e4750d5e23f8c74a.bindPopup(popup_0a3904e430a826fe8b481463cf7be888)
+        ;
+
+        
+    
+    
+            marker_25c103ddbfa042d0e4750d5e23f8c74a.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f5f5830289d7f439368827d866abd5bf = L.marker(
+                [39.908984304333885, -83.42936665184938],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_926ae4eb4843dba483565e9467f83a76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f5f5830289d7f439368827d866abd5bf.setIcon(icon_926ae4eb4843dba483565e9467f83a76);
+        
+    
+        var popup_ea10122d36964ac339e7144f6c6deed3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8afa45e02d7239ddf9a0461b00f8a699 = $(`<div id="html_8afa45e02d7239ddf9a0461b00f8a699" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_ea10122d36964ac339e7144f6c6deed3.setContent(html_8afa45e02d7239ddf9a0461b00f8a699);
+            
+        
+
+        marker_f5f5830289d7f439368827d866abd5bf.bindPopup(popup_ea10122d36964ac339e7144f6c6deed3)
+        ;
+
+        
+    
+    
+            marker_f5f5830289d7f439368827d866abd5bf.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d174047caf902e0912df25429e684ae4 = L.marker(
+                [40.23040145601971, -83.34584955],
+                {
+}
+            ).addTo(feature_group_e2e56b6d53197fd8ab02208569761ddd);
+        
+    
+            var icon_52bafa6a008eaea94862d9dac14607e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d174047caf902e0912df25429e684ae4.setIcon(icon_52bafa6a008eaea94862d9dac14607e9);
+        
+    
+        var popup_76ad3824e31df566315f47c3d35cc1b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0872829047a42d07c85557beb42ad43b = $(`<div id="html_0872829047a42d07c85557beb42ad43b" style="width: 100.0%; height: 100.0%;">Walmart</div>`)[0];
+                popup_76ad3824e31df566315f47c3d35cc1b5.setContent(html_0872829047a42d07c85557beb42ad43b);
+            
+        
+
+        marker_d174047caf902e0912df25429e684ae4.bindPopup(popup_76ad3824e31df566315f47c3d35cc1b5)
+        ;
+
+        
+    
+    
+            marker_d174047caf902e0912df25429e684ae4.bindTooltip(
+                `<div>
+                     Walmart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_e2e56b6d53197fd8ab02208569761ddd.addTo(map_53db340858135a28538143cc65a828ab);
+        
+    
+            var feature_group_abf72bf2c4519ea9ad22f503553c7a36 = L.featureGroup(
+                {
+}
+            );
+        
+    
+        function geo_json_8c6c4cca5325bf0dc6f93361f145637f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "red", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_8c6c4cca5325bf0dc6f93361f145637f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_8c6c4cca5325bf0dc6f93361f145637f = L.geoJson(null, {
+                onEachFeature: geo_json_8c6c4cca5325bf0dc6f93361f145637f_onEachFeature,
+            
+                style: geo_json_8c6c4cca5325bf0dc6f93361f145637f_styler,
+            ...{
+}
+        });
+
+        function geo_json_8c6c4cca5325bf0dc6f93361f145637f_add (data) {
+            geo_json_8c6c4cca5325bf0dc6f93361f145637f
+                .addData(data);
+        }
+            geo_json_8c6c4cca5325bf0dc6f93361f145637f_add({"bbox": [-83.16097901609149, 39.827017245278356, -82.78186080998424, 40.13666267927718], "features": [{"bbox": [-83.00727678749686, 39.86948357575704, -83.0056986654435, 39.870299643683815], "geometry": {"coordinates": [[[-83.00578499999999, 39.870051], [-83.00575799999999, 39.86982100000001], [-83.00571821618786, 39.86948357575704], [-83.00572063356151, 39.86948369993556], [-83.00727678749686, 39.86956362378905], [-83.0071458005922, 39.870299643683815], [-83.00570421641548, 39.870243380812305], [-83.0056986654435, 39.870243164130265], [-83.00578499999999, 39.870051]]], "type": "Polygon"}, "id": "0", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049009590", "GEOID_2": "3918000", "ID": 1, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 17728.98535333784, "mc_ratio": 0.486572598998634, "p_sim": 0.002, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.00528803249895, 39.85649311562858, -82.9946711803968, 39.870210422109594], "geometry": {"coordinates": [[[-83.005216, 39.86810199999999], [-83.005167, 39.868108], [-83.00510199999998, 39.868116], [-83.005043, 39.86812299999999], [-83.004949, 39.868135], [-83.004924, 39.86923199999999], [-83.00485350793048, 39.87021017092758], [-83.00473207157464, 39.870205430082976], [-83.00360475488117, 39.87021028015049], [-83.00357172085647, 39.870210422109594], [-83.00353406198747, 39.86985884417084], [-83.00353400931765, 39.86985834992398], [-83.00310531663108, 39.86984184345006], [-82.9947427558078, 39.86951955646897], [-82.99473840185861, 39.86951938851768], [-82.994739, 39.869513], [-82.9946711803968, 39.86950955987546], [-82.9946714163434, 39.86950711752637], [-82.9946728339132, 39.86949244668012], [-82.99535822359448, 39.86239601893926], [-82.99651070779694, 39.86243276330931], [-82.99654404709725, 39.86243382624229], [-82.99985715015735, 39.86253939402391], [-82.99985964368607, 39.86253947345463], [-82.99985825631913, 39.86234633718234], [-82.99982014792506, 39.85703935410344], [-83.0031856859995, 39.85650896919279], [-83.00328627674611, 39.85649311562858], [-83.00328648336163, 39.856494375698055], [-83.00344428494034, 39.857454648662454], [-83.00404305954407, 39.86102568758896], [-83.00404459618107, 39.86103485082586], [-83.0042655091669, 39.8623522630374], [-83.00490540692677, 39.86653257283366], [-83.00503886960747, 39.86734409196445], [-83.00506405212079, 39.86749721441462], [-83.00504271538304, 39.86734348904633], [-83.00496150585958, 39.86675838396852], [-83.00510400635244, 39.8673319816729], [-83.00510446148381, 39.867333815298146], [-83.00528282430457, 39.868051754264826], [-83.00528803249895, 39.86809292273532], [-83.005216, 39.86810199999999]]], "type": "Polygon"}, "id": "1", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049009590", "GEOID_2": "3918000", "ID": 2, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 1515797.182801655, "mc_ratio": 0.486572598998634, "p_sim": 0.002, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.93497025152296, 39.830200000000005, -82.934057, 39.83220237996501], "geometry": {"coordinates": [[[-82.93479599999999, 39.832199], [-82.934603, 39.832188], [-82.934057, 39.83216], [-82.93421299999999, 39.830338], [-82.934227, 39.830200000000005], [-82.93479699999999, 39.83023], [-82.93497025152296, 39.83023898712188], [-82.93496973443499, 39.830245435242276], [-82.93482758934738, 39.832017871541424], [-82.93481279059972, 39.83220237996501], [-82.93479577998124, 39.83220164022887], [-82.93479599999999, 39.832199]]], "type": "Polygon"}, "id": "3", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049009590", "GEOID_2": "3918000", "ID": 4, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 23846.15811441868, "mc_ratio": 0.486572598998634, "p_sim": 0.002, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.94458602046515, 39.8304875962448, -82.94199637557008, 39.83161411818219], "geometry": {"coordinates": [[[-82.94400499999999, 39.83059099999999], [-82.944338, 39.830608], [-82.944426, 39.83061300000001], [-82.944538, 39.83062], [-82.94458602046515, 39.830622793918565], [-82.9445846740564, 39.83063749900426], [-82.94457794043015, 39.830711036003336], [-82.94449523835569, 39.83161411818219], [-82.94322897291876, 39.83152743157823], [-82.94329635347295, 39.83057311325518], [-82.94199637557008, 39.83050231291615], [-82.94199656985805, 39.830500162241286], [-82.94199704463082, 39.83049490133375], [-82.94199770446633, 39.8304875962448], [-82.94400499999999, 39.83059099999999]]], "type": "Polygon"}, "id": "4", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049009590", "GEOID_2": "3918000", "ID": 5, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 20709.4376588198, "mc_ratio": 0.486572598998634, "p_sim": 0.002, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.00123904254839, 39.829427918397705, -82.9910347348765, 39.84349949367457], "geometry": {"coordinates": [[[-83.000165, 39.831982999999994], [-83.00014499999999, 39.832125], [-83.000022, 39.832994], [-83.000008, 39.833122], [-82.999939, 39.833747], [-82.99990099999998, 39.83409799999999], [-83.00004800000002, 39.83410599999999], [-83.00023620063564, 39.83411368673589], [-83.00023541129086, 39.83411999636898], [-83.00023329442041, 39.83413691225769], [-83.00023309445588, 39.83413851183608], [-83.00020555784806, 39.834358626510756], [-83.00003778778377, 39.83569966524716], [-83.00004345998974, 39.83575253581211], [-83.00027315850524, 39.83789358076182], [-83.00123904254839, 39.84349949367457], [-83.00123697483602, 39.84349938993635], [-83.00121315118399, 39.84349820028927], [-82.99105146565657, 39.84299019800637], [-82.99104609366861, 39.84298992960407], [-82.9910347348765, 39.84298936114989], [-82.99115216391195, 39.841759161836535], [-82.99115510468242, 39.84172834690654], [-82.99116565699035, 39.84161779735296], [-82.99124841278464, 39.84006422121358], [-82.99139981628004, 39.83722171188766], [-82.99149771411848, 39.835383626916226], [-82.99151624376849, 39.835035709376754], [-82.99153808018136, 39.834625677203576], [-82.99192275213377, 39.83435311057821], [-82.99279962430622, 39.83300623609446], [-82.99292254593004, 39.83281742604062], [-82.99292533806981, 39.832813136913884], [-82.99293099863476, 39.83280444305089], [-82.99336651663744, 39.83283311922978], [-82.99337116262687, 39.83283342480773], [-82.99370453455803, 39.83285537489536], [-82.99372857065528, 39.83285624901983], [-82.99444549018634, 39.832882307000546], [-82.9963710922166, 39.83295227878162], [-82.99637619766627, 39.83295246430285], [-82.99639650694398, 39.8329207144747], [-82.9964457133628, 39.83284378874907], [-82.99648101397258, 39.83280274599004], [-82.99822328788187, 39.83077700136505], [-82.99822251227549, 39.830668623663584], [-82.99811069224135, 39.82952386827975], [-82.9981087523033, 39.829504010891405], [-82.99813252172746, 39.82952213617601], [-82.99813465951976, 39.829523766340714], [-82.99814408812449, 39.829530956083175], [-83.00052700084534, 39.829427918397705], [-83.000165, 39.831982999999994]]], "type": "Polygon"}, "id": "5", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049009590", "GEOID_2": "3918000", "ID": 6, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 1642660.9633193747, "mc_ratio": 0.486572598998634, "p_sim": 0.002, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.06747225238024, 39.91516609113035, -83.065274, 39.91642099999999], "geometry": {"coordinates": [[[-83.06733999999999, 39.91588500000001], [-83.06698500000002, 39.91611], [-83.066953, 39.91613], [-83.066746, 39.916259999999994], [-83.06659600000002, 39.916354], [-83.066491, 39.91642099999999], [-83.06619099999999, 39.916368000000006], [-83.06559099999998, 39.91626200000001], [-83.06547, 39.91624], [-83.065274, 39.91620499999999], [-83.065454, 39.915918], [-83.065477, 39.915883], [-83.06552199999999, 39.915815], [-83.06551601970392, 39.91581304281268], [-83.06556669253976, 39.91574268917212], [-83.0656485515246, 39.91562903599055], [-83.0657672347575, 39.915464252380275], [-83.06580386253695, 39.915470307389974], [-83.06600341504044, 39.915196082866736], [-83.06609714613896, 39.91516609113035], [-83.06647841182033, 39.915224755131646], [-83.06647178693031, 39.9152517450928], [-83.06747225238024, 39.91540578008894], [-83.06733999999999, 39.91588500000001]]], "type": "Polygon"}, "id": "6", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049008381", "GEOID_2": "3918000", "ID": 7, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 28351.191744618907, "mc_ratio": 0.438857142857143, "p_sim": 0.009, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.07276450216258, 39.907057890089995, -83.07095684302962, 39.908425432027684], "geometry": {"coordinates": [[[-83.071763, 39.907425999999994], [-83.07139191288005, 39.907378023037616], [-83.07170176799464, 39.907057890089995], [-83.07276450216258, 39.907183437578716], [-83.072764, 39.907184], [-83.072599, 39.907371], [-83.072498, 39.907478], [-83.072465, 39.907515], [-83.07225399999999, 39.90773899999999], [-83.07226269132518, 39.907740502204796], [-83.07216208628451, 39.90784792513675], [-83.07170868756974, 39.90839402683592], [-83.07157568466138, 39.908425432027684], [-83.07152882967303, 39.908418796263874], [-83.07095684302962, 39.90830232086725], [-83.07120281854726, 39.907726784625126], [-83.07131254142303, 39.90747006539171], [-83.07164143859322, 39.90755908352801], [-83.07176594386164, 39.90743213997476], [-83.0717579677531, 39.90743111276742], [-83.071763, 39.907425999999994]]], "type": "Polygon"}, "id": "7", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049008381", "GEOID_2": "3918000", "ID": 8, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 20355.80427179164, "mc_ratio": 0.438857142857143, "p_sim": 0.009, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.07025767272015, 39.90920295924527, -83.06852264788093, 39.91090727163442], "geometry": {"coordinates": [[[-83.0688642936727, 39.91022454398482], [-83.06889735187542, 39.91019100920341], [-83.06902586314376, 39.91006062492726], [-83.06915441919473, 39.90993019795329], [-83.06932087515037, 39.909761312760146], [-83.06936538941906, 39.90971615218214], [-83.0695453859659, 39.9097513850448], [-83.06959758270985, 39.90958769465191], [-83.0696772492179, 39.909337872793486], [-83.0697202697737, 39.90920295924527], [-83.0697631339833, 39.90921132054625], [-83.069605, 39.909769000000004], [-83.07025767272015, 39.90990912714928], [-83.0695852772066, 39.9105986685355], [-83.06928434243449, 39.91090727163442], [-83.06852264788093, 39.910571164568445], [-83.06864015500415, 39.910451945679554], [-83.06876883895555, 39.91032139333871], [-83.0688642936727, 39.91022454398482]]], "type": "Polygon"}, "id": "8", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049008381", "GEOID_2": "3918000", "ID": 9, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 16754.17364804299, "mc_ratio": 0.438857142857143, "p_sim": 0.009, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.15365836132648, 40.00146870168679, -83.150507, 40.0035581326607], "geometry": {"coordinates": [[[-83.150507, 40.002006], [-83.151022, 40.001936], [-83.15101719037295, 40.00190100236704], [-83.15275167455593, 40.001739219577786], [-83.1527085622266, 40.00146870168679], [-83.15327847842175, 40.001483040666486], [-83.15330617460043, 40.00166460509042], [-83.15333525749018, 40.00167936701509], [-83.15308087076042, 40.001702744590915], [-83.15293781041008, 40.00179457062867], [-83.15278384868496, 40.001945918829136], [-83.15279435767683, 40.00201188245801], [-83.15341078533167, 40.002027795032376], [-83.15349637698039, 40.00256807536023], [-83.15359222574021, 40.00318949819183], [-83.15360391827748, 40.00318986181292], [-83.15365836132648, 40.00352035337088], [-83.15361277418657, 40.0035581326607], [-83.15267362734704, 40.00353840347919], [-83.15216327464763, 40.003531745528655], [-83.15216354391714, 40.00355069006855], [-83.1509320624736, 40.00352240380723], [-83.15091028065989, 40.00352030716478], [-83.15088992555962, 40.00351399027809], [-83.15087234796239, 40.00350387707046], [-83.15085872649485, 40.003490640999026], [-83.15084996415933, 40.00347516239675], [-83.15084664684903, 40.0034584755636], [-83.15084136607496, 40.003404984720525], [-83.15083110264771, 40.00335192588625], [-83.15081590830435, 40.00329956986786], [-83.15079586291245, 40.003248190017935], [-83.15077106615425, 40.00319804967157], [-83.15066309727457, 40.00300276619086], [-83.150507, 40.002006]]], "type": "Polygon"}, "id": "12", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007966", "GEOID_2": "3918000", "ID": 13, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 79415.97701558482, "mc_ratio": 0.421852033317001, "p_sim": 0.022, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.15700955364986, 39.99971933206603, -83.15349398170069, 40.00368726253398], "geometry": {"coordinates": [[[-83.15639680716316, 40.00367435498141], [-83.15410618049935, 40.00360839444483], [-83.15389007617684, 40.00219564118843], [-83.15376254816681, 40.00139838183778], [-83.15367074371395, 40.000824438272154], [-83.15364719248012, 40.000677201562105], [-83.15349398170069, 39.99971933206603], [-83.15700955364986, 39.999781434954436], [-83.15696227444822, 40.00090552916851], [-83.15695474200018, 40.00108466094024], [-83.15693716975272, 40.00150235700679], [-83.15691032361647, 40.002140704463756], [-83.15684527170725, 40.00368726253398], [-83.15661086642304, 40.003680516410164], [-83.15639680716316, 40.00367435498141]]], "type": "Polygon"}, "id": "18", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007966", "GEOID_2": "3918000", "ID": 19, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 196722.5975753833, "mc_ratio": 0.421852033317001, "p_sim": 0.022, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.13878778537774, 39.99988797373028, -83.13608017556909, 40.00310628751483], "geometry": {"coordinates": [[[-83.13678194383492, 40.00303440169751], [-83.13677480390183, 40.0029878364266], [-83.13652317325776, 40.00297887941296], [-83.13621273557193, 40.000953717616284], [-83.13608017556909, 40.00008942915191], [-83.13614112791807, 40.000084041778905], [-83.13633614729152, 40.00006680482665], [-83.13653120284505, 40.000049564651746], [-83.13670849684344, 40.00003389393484], [-83.13688579310381, 40.00001822293741], [-83.13708081209933, 40.000000983847265], [-83.1372758696252, 39.999983742422145], [-83.13747088843525, 39.99996650358448], [-83.13764818318056, 39.99995083144179], [-83.13832151445862, 39.999891308129094], [-83.13835932021838, 39.99988797373028], [-83.13849030236078, 40.000762037746995], [-83.13861397288848, 40.00158730980284], [-83.13864262703122, 40.00177851729508], [-83.1386709955255, 40.00196780884269], [-83.13863304343056, 40.00197076135396], [-83.13871961530474, 40.002570797260915], [-83.13878778537774, 40.003019068636576], [-83.13869056848193, 40.00310628751483], [-83.13804488471757, 40.003081664497905], [-83.13678194383492, 40.00303440169751]]], "type": "Polygon"}, "id": "19", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007965", "GEOID_2": "3918000", "ID": 20, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 113781.22820042378, "mc_ratio": 0.470765521398433, "p_sim": 0.022, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.12356211429088, 40.0010076351733, -83.1192948178014, 40.00243511214631], "geometry": {"coordinates": [[[-83.11945443084291, 40.001186792816775], [-83.1192948178014, 40.0010076351733], [-83.11967853028328, 40.001017380269616], [-83.1198282596734, 40.00102118141997], [-83.12185596114188, 40.00106965440895], [-83.12212241252911, 40.00107602175928], [-83.12242556349067, 40.001083263925565], [-83.12356211429088, 40.001295967098045], [-83.12342559498522, 40.001453630680984], [-83.12329234021966, 40.001607522867], [-83.12324094117845, 40.00166894692706], [-83.12319482095353, 40.001732799908474], [-83.12315417746137, 40.00179881957946], [-83.12311917797128, 40.00186672135416], [-83.12308997340833, 40.00193622613688], [-83.12306668178076, 40.00200704059541], [-83.12304940464692, 40.00207886517967], [-83.12303821310276, 40.002151398699155], [-83.12287578549653, 40.00214412855299], [-83.12286152319673, 40.00243511214631], [-83.12172957574055, 40.002403280763346], [-83.12160751023814, 40.002397436105376], [-83.12148600993531, 40.00238669691822], [-83.12136540306187, 40.00237109569125], [-83.12124601909818, 40.00235067391502], [-83.12112818413934, 40.0023254875095], [-83.12101221855247, 40.00229560683665], [-83.12089844158021, 40.00226110766931], [-83.12078715980702, 40.00222209106656], [-83.12067867747294, 40.002178658100725], [-83.12057329314527, 40.00213093058994], [-83.12047129255554, 40.00207903582496], [-83.12037295457479, 40.002023120046886], [-83.12027854169249, 40.00196333138537], [-83.12018831770295, 40.00189983327455], [-83.12010252775681, 40.00183280005523], [-83.12002140418447, 40.00176241334118], [-83.11994517005708, 40.00168886740425], [-83.11945443084291, 40.001186792816775]]], "type": "Polygon"}, "id": "20", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007965", "GEOID_2": "3918000", "ID": 21, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 66516.86323436587, "mc_ratio": 0.470765521398433, "p_sim": 0.022, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.14257274838516, 40.00220211451885, -83.13900828714571, 40.003230382881], "geometry": {"coordinates": [[[-83.14246149736763, 40.00249517508707], [-83.14257274838516, 40.003230382881], [-83.14149722912158, 40.003188880863334], [-83.14149354416693, 40.00316092958496], [-83.14082575943334, 40.00313630480006], [-83.14029095934995, 40.0031165819434], [-83.13985613574589, 40.00310054220868], [-83.13926977124574, 40.003081328062464], [-83.13923880231529, 40.00307794992109], [-83.13920907446506, 40.00307046526803], [-83.13918150329323, 40.00305910328812], [-83.13915693408826, 40.00304421603788], [-83.1391361229006, 40.00302625783314], [-83.13911970723231, 40.00300578180589], [-83.13910818941842, 40.00298341567679], [-83.13910192947655, 40.00295984828423], [-83.13900828714571, 40.00230481983042], [-83.13960383399225, 40.00225134529175], [-83.14015209416532, 40.00220211451885], [-83.14021508467754, 40.00261681115057], [-83.14080214467057, 40.00258055938192], [-83.1414003788405, 40.00255063553012], [-83.14193052553617, 40.00252234090579], [-83.14246128661765, 40.002495180743495], [-83.14246149736763, 40.00249517508707]]], "type": "Polygon"}, "id": "21", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007965", "GEOID_2": "3918000", "ID": 22, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 38436.38827058257, "mc_ratio": 0.470765521398433, "p_sim": 0.022, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.94486856162544, 39.827017245278356, -82.94199770446633, 39.830622793918565], "geometry": {"coordinates": [[[-82.944538, 39.83062], [-82.944426, 39.83061300000001], [-82.944338, 39.830608], [-82.94400499999999, 39.83059099999999], [-82.94199770446633, 39.8304875962448], [-82.9423084103968, 39.82704766110331], [-82.94230877165926, 39.827043663383044], [-82.94231115741526, 39.827017245278356], [-82.94481223154663, 39.82715720839922], [-82.9448456668663, 39.82715907912857], [-82.94486856162544, 39.82716036030749], [-82.944784372364, 39.82841965184895], [-82.94478426996878, 39.82842117800406], [-82.94477518947737, 39.82855700388228], [-82.94476732276068, 39.828642919802064], [-82.94476715898178, 39.82864471189328], [-82.94476448904125, 39.828673869209986], [-82.94458654037084, 39.8306171156587], [-82.94458602046515, 39.830622793918565], [-82.944538, 39.83062]]], "type": "Polygon"}, "id": "22", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049010300", "GEOID_2": "3918000", "ID": 23, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 145120.21999258632, "mc_ratio": 0.421111111111111, "p_sim": 0.006, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.93023179402572, 39.88594552697161, -82.92936895068948, 39.88864404790195], "geometry": {"coordinates": [[[-82.93018677654635, 39.88599453678829], [-82.93020222605941, 39.88600632481404], [-82.93021478309745, 39.88602000135395], [-82.93022406744929, 39.88603514989296], [-82.93022979567233, 39.88605131032845], [-82.93023179402572, 39.88606799063136], [-82.93023156192197, 39.8860743186992], [-82.93014071476705, 39.88721390562611], [-82.93008000357896, 39.88734856524688], [-82.93002986569196, 39.88797732646711], [-82.93009884357396, 39.88798069768777], [-82.93005472258851, 39.888539574397065], [-82.93005490272736, 39.88854393748513], [-82.93005340254963, 39.88855791419081], [-82.93004877457605, 39.888571478156024], [-82.93004115889812, 39.88858421725981], [-82.93003078695844, 39.88859574426496], [-82.93001797460838, 39.88860570855182], [-82.93000311165237, 39.88861380696501], [-82.92998664788496, 39.888619794672685], [-82.92996908492857, 39.888623488799574], [-82.92995095524995, 39.88862477841078], [-82.92994199294104, 39.8886245140627], [-82.9298306206398, 39.888620366920655], [-82.92967641378027, 39.888620932288084], [-82.92952254436254, 39.88862880876008], [-82.92936959675363, 39.88864396717707], [-82.92936895068948, 39.88864404790195], [-82.92936918600518, 39.88864068843967], [-82.92941783343302, 39.88794747662323], [-82.929425448887, 39.88784568193852], [-82.92956760508427, 39.88594552697161], [-82.93011504555345, 39.885972543539346], [-82.93012812275632, 39.88597372766995], [-82.93014915396431, 39.88597798632309], [-82.93016890441734, 39.8859849931176], [-82.93018677654635, 39.88599453678829]]], "type": "Polygon"}, "id": "23", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049009495", "GEOID_2": "3918000", "ID": 24, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 28279.378332761265, "mc_ratio": 0.591962905718702, "p_sim": 0.002, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.82348497722938, 39.98008980621821, -82.81560711300392, 39.982357993622855], "geometry": {"coordinates": [[[-82.81926842253718, 39.980399600704885], [-82.81959313572871, 39.98030438241439], [-82.8197483689522, 39.980292816048625], [-82.82003658327929, 39.980204384984546], [-82.82042294399814, 39.98012014888185], [-82.82063902971719, 39.98008980621821], [-82.82087925517628, 39.98011310941242], [-82.82111026052749, 39.98017245295042], [-82.82145492364447, 39.980351658735216], [-82.82223045617472, 39.98025396735298], [-82.82285701894595, 39.98018225250675], [-82.82312878799105, 39.98073299768106], [-82.82319167575237, 39.98086044491815], [-82.82348497722938, 39.98145481348663], [-82.8227424145533, 39.98153998643157], [-82.82224034749714, 39.98159757372592], [-82.82116279918584, 39.981721153867], [-82.82016381679234, 39.98183568538416], [-82.81904104442464, 39.9819643976197], [-82.81827530305051, 39.98205216396846], [-82.81775384626444, 39.98211194164205], [-82.81753986308456, 39.982136472259995], [-82.81673809264922, 39.98222837619198], [-82.81655155458658, 39.9822497570694], [-82.81560711300392, 39.982357993622855], [-82.81624145786843, 39.981936829863145], [-82.81645980927507, 39.981765372481696], [-82.81692131360037, 39.98140298616649], [-82.81693438653055, 39.98138382493286], [-82.8169122234356, 39.9813692611241], [-82.81691233653224, 39.98136915904671], [-82.81700037334727, 39.98128994802688], [-82.81710613867742, 39.981201539468366], [-82.81721800658468, 39.98111769586174], [-82.81733564688925, 39.981038666658534], [-82.81745871061138, 39.98096468515012], [-82.81758682998338, 39.98089597116994], [-82.81771962546989, 39.980832730173866], [-82.81785670340564, 39.980775148743895], [-82.81799765483655, 39.980723397293296], [-82.81802913825346, 39.980814693391316], [-82.81821867149026, 39.98074476575946], [-82.81855596031946, 39.98063144226642], [-82.81876074335177, 39.98055022339812], [-82.81892241733584, 39.98048610193261], [-82.81926842253718, 39.980399600704885]]], "type": "Polygon"}, "id": "24", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049009381", "GEOID_2": "3918000", "ID": 25, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 151083.9185083999, "mc_ratio": 0.400148754183711, "p_sim": 0.004, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.81357773493066, 39.981378948145526, -82.80564560078453, 39.98342220791521], "geometry": {"coordinates": [[[-82.80610535044582, 39.9824127232075], [-82.80618748847374, 39.98237812176714], [-82.8062735996169, 39.98234980985584], [-82.80636287373365, 39.98232805436674], [-82.80645446879824, 39.9823130592338], [-82.8076895518019, 39.982158848129224], [-82.80829079469598, 39.98208261584435], [-82.8084080423197, 39.98206438246449], [-82.80852308717311, 39.98203917932426], [-82.80863523096338, 39.98200715957293], [-82.8087437931546, 39.98196851954611], [-82.80884811328247, 39.98192349245491], [-82.80894755799117, 39.98187235106908], [-82.80904010014378, 39.9818162877773], [-82.8091267800427, 39.98175492879345], [-82.80920708650451, 39.981688635731544], [-82.80928054711885, 39.981617799824974], [-82.80934673056956, 39.981542837416725], [-82.8094052419557, 39.981464190871854], [-82.80946746669565, 39.981378948145526], [-82.80949535128364, 39.9813917744503], [-82.80979776267236, 39.981404825777936], [-82.81038299426994, 39.98143008266983], [-82.81051474617612, 39.981435768473226], [-82.81165539660992, 39.98148497067671], [-82.81189458095193, 39.98149530152384], [-82.81189487009877, 39.98149529535168], [-82.81224072328955, 39.98151023426822], [-82.81334536835908, 39.981557801914875], [-82.81343745113597, 39.981561673774046], [-82.81357598791206, 39.981895663507245], [-82.81357499078136, 39.981990922055274], [-82.81357773493066, 39.98199764248344], [-82.81347652889797, 39.98190683048021], [-82.81326195239401, 39.981890066075735], [-82.81311352734978, 39.98194894136799], [-82.81297138120874, 39.98202557290113], [-82.81262610137182, 39.98236833610044], [-82.81244948281926, 39.98271196433199], [-82.81233288344984, 39.98272492318843], [-82.81224622435397, 39.98273455459144], [-82.81210899146086, 39.98274937568912], [-82.81176934527095, 39.98278605699832], [-82.81064046003405, 39.982908187982666], [-82.81063354029209, 39.98287718656563], [-82.80936914479115, 39.98301866637513], [-82.8071912750272, 39.9832623289309], [-82.80577776711743, 39.98342166580582], [-82.80576534870518, 39.98342220791521], [-82.80575299670907, 39.98342108187172], [-82.80574108593372, 39.983418322724596], [-82.80572997852309, 39.98341401509112], [-82.80572001340386, 39.98340828868119], [-82.80571149106521, 39.98340131833648], [-82.80570467235268, 39.98339331592819], [-82.80569976321998, 39.98338452409199], [-82.80569691469775, 39.98337520902325], [-82.80567609541882, 39.98326628263399], [-82.80565453674139, 39.98315214077538], [-82.80564560078453, 39.98308042924993], [-82.80564574508428, 39.98300838966335], [-82.80565497025506, 39.98293670019318], [-82.80567318675152, 39.98286603654781], [-82.80570022302969, 39.982797063839634], [-82.80573582670672, 39.982730433880285], [-82.80577966099857, 39.98266677348178], [-82.80583131173734, 39.98260668263759], [-82.80589029319019, 39.98255072640193], [-82.80595605039726, 39.98249943398356], [-82.80602796146611, 39.982453287932806], [-82.80610535044582, 39.9824127232075]]], "type": "Polygon"}, "id": "25", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049009390", "GEOID_2": "3918000", "ID": 26, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 143615.58419836705, "mc_ratio": 0.514379322897707, "p_sim": 0.015, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.81216866278797, 39.98323206242367, -82.80581570832872, 39.98574922442662], "geometry": {"coordinates": [[[-82.811403, 39.983368999999996], [-82.811275, 39.984859], [-82.811265, 39.984973], [-82.81146199999999, 39.98498], [-82.8121669037501, 39.98500685347641], [-82.81216866278797, 39.98501239030442], [-82.8112685171777, 39.98497965857245], [-82.81124900976505, 39.985165556543556], [-82.8107675056011, 39.98521615470883], [-82.81015683545247, 39.98528032349529], [-82.80931534825362, 39.98536874283686], [-82.80928468497554, 39.98537196505006], [-82.8086044828212, 39.98544787039363], [-82.8084768208463, 39.98546211446557], [-82.8079053646493, 39.98552588116264], [-82.80726904221773, 39.98559687316827], [-82.80667729770776, 39.9856629034476], [-82.80661022535085, 39.98567038641737], [-82.80590360261883, 39.98574922442662], [-82.8059035543602, 39.98574836894851], [-82.80581570832872, 39.983771573149745], [-82.80608787176526, 39.9837418939003], [-82.80677838303836, 39.98366659575228], [-82.80730804755612, 39.98360883404277], [-82.80806209770508, 39.98352659818984], [-82.8080614297586, 39.983536758220936], [-82.80870346826767, 39.983469737503675], [-82.80904385128116, 39.98345730287786], [-82.80925898929031, 39.98344944380881], [-82.80947272019854, 39.98344163488819], [-82.81123437173613, 39.98325168196136], [-82.81141467083454, 39.98323206242367], [-82.811403, 39.983368999999996]]], "type": "Polygon"}, "id": "26", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007301", "GEOID_2": "3918000", "ID": 27, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 172849.5512768278, "mc_ratio": 0.502000889284126, "p_sim": 0.003, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.79324915575819, 39.985229312058074, -82.79114666327483, 39.9873591687614], "geometry": {"coordinates": [[[-82.79138220502871, 39.9854544286192], [-82.7914077184523, 39.98544192661168], [-82.7914356092338, 39.98543292036601], [-82.79146507762235, 39.985427667646846], [-82.7924651110331, 39.98531649075082], [-82.79324915575819, 39.985229312058074], [-82.79317999055655, 39.985757545309745], [-82.79270498364319, 39.986244848519206], [-82.79260404889588, 39.98634570469206], [-82.79251372376355, 39.98643595998125], [-82.792334152763, 39.986460236313015], [-82.79224785504621, 39.986565300409886], [-82.7922174446477, 39.98674694050677], [-82.79220554815433, 39.9868179959859], [-82.79231739120345, 39.98689397157724], [-82.79229427177613, 39.98728959603459], [-82.79143293584852, 39.987258375373194], [-82.79135884795181, 39.98732051574289], [-82.79124748487175, 39.98735891866033], [-82.79114666327483, 39.9873591687614], [-82.79120783714893, 39.98669356953774], [-82.79124593637903, 39.98627842372284], [-82.79131248821854, 39.985553912900265], [-82.7913171558451, 39.98553092341037], [-82.79132680569514, 39.985508869924196], [-82.79134115943148, 39.98548838717849], [-82.79135980505416, 39.985470064309084], [-82.79138220502871, 39.9854544286192]]], "type": "Polygon"}, "id": "27", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007301", "GEOID_2": "3918000", "ID": 28, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 45249.42996566045, "mc_ratio": 0.502000889284126, "p_sim": 0.003, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.79083207364124, 39.985511609250025, -82.78635247944034, 39.98926083857203], "geometry": {"coordinates": [[[-82.78657069940411, 39.98598466009235], [-82.78747564170527, 39.985881424974046], [-82.78783894049663, 39.98583997550323], [-82.78858531424851, 39.98575482161323], [-82.78927946563753, 39.98567562148766], [-82.79070398539618, 39.98551307356477], [-82.79073084827763, 39.985511609250025], [-82.79075769029413, 39.985513271986214], [-82.79078390245878, 39.98551802185276], [-82.79080888604648, 39.98552575315778], [-82.79083207364124, 39.98553628808145], [-82.79077123589697, 39.986187145851986], [-82.7907521636422, 39.98619984971679], [-82.79073244821578, 39.986410786725166], [-82.7907214725826, 39.98652820806465], [-82.79073798651415, 39.98654287993635], [-82.79069453082785, 39.987007774555885], [-82.790682126551, 39.98717665986839], [-82.79066256745612, 39.98744297822563], [-82.79070858040681, 39.98744546081473], [-82.7906865750355, 39.98765713020348], [-82.79069548810332, 39.98779826187434], [-82.79070440111263, 39.98797126248668], [-82.7907400535397, 39.98815109122103], [-82.7907776818404, 39.98828068396186], [-82.79071106005838, 39.98829639481555], [-82.79064750994148, 39.988318387155516], [-82.79058803228338, 39.98834631446683], [-82.79053355608384, 39.98837974035055], [-82.79048493856074, 39.98841814122503], [-82.79044294059291, 39.988460913591084], [-82.79040821975502, 39.98850738845893], [-82.79038132096932, 39.98855683587386], [-82.79036266720952, 39.988608482050715], [-82.7903369966384, 39.988699956310626], [-82.79021533354164, 39.98870794496457], [-82.7895384940259, 39.98926083857203], [-82.78690786101951, 39.98916643088], [-82.78635247944034, 39.98914649144472], [-82.7864986712632, 39.98753131300354], [-82.78656838906618, 39.986761030941004], [-82.78661136113237, 39.986286060952615], [-82.78661261287044, 39.98622423471857], [-82.78660510791752, 39.98616267033298], [-82.78657069940411, 39.98598466009235]]], "type": "Polygon"}, "id": "28", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007302", "GEOID_2": "3918000", "ID": 29, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 228376.22108163932, "mc_ratio": 0.519391261659303, "p_sim": 0.008, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.78632537306491, 39.98602158378378, -82.78186080998424, 39.98913620533827], "geometry": {"coordinates": [[[-82.78550868540401, 39.98911615447714], [-82.7841898084564, 39.98906883816805], [-82.78386035941153, 39.98905701287752], [-82.78186080998424, 39.988985238297545], [-82.78194598181187, 39.98720446484045], [-82.78194601846688, 39.98720426481156], [-82.78199921309285, 39.98650659741665], [-82.78280142221928, 39.98641587935747], [-82.78324876409334, 39.98636528930328], [-82.78362899054098, 39.98632228816026], [-82.78380555050178, 39.98630231945159], [-82.78385123846734, 39.986297151018206], [-82.78505434165952, 39.98616107678588], [-82.78549633792615, 39.98611108285203], [-82.78554876649268, 39.98610516154419], [-82.78628892590449, 39.98602158378378], [-82.78631784045295, 39.98617238761633], [-82.78632537306491, 39.98623419062026], [-82.786324115041, 39.986296258235825], [-82.78627414621208, 39.986848727675266], [-82.78617094160418, 39.98798998769581], [-82.78606728684674, 39.98913620533827], [-82.78550868540401, 39.98911615447714]]], "type": "Polygon"}, "id": "29", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007302", "GEOID_2": "3918000", "ID": 30, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 193357.1294732483, "mc_ratio": 0.519391261659303, "p_sim": 0.008, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.9508510229413, 40.084261633730854, -82.94321792418991, 40.08935539106009], "geometry": {"coordinates": [[[-82.95028334995777, 40.08506353697875], [-82.95028286667244, 40.08507253410683], [-82.9508510229413, 40.08520798839579], [-82.95083770676806, 40.08574028546507], [-82.9508370150899, 40.08576789986476], [-82.95084485510186, 40.085769251331094], [-82.95077863730651, 40.08666026245698], [-82.95075828651083, 40.086934071236705], [-82.95065026575337, 40.088387480533214], [-82.95060505487282, 40.088995775313826], [-82.95057832792497, 40.08935539106009], [-82.94674997515413, 40.089197444959716], [-82.94653030176842, 40.089188320610184], [-82.94638809284517, 40.08918241141168], [-82.94574528121652, 40.089155704043556], [-82.94495864635515, 40.0891230171994], [-82.94321792418991, 40.0890506643261], [-82.94394625619198, 40.088518094677625], [-82.94400790079774, 40.08846967310353], [-82.94406457025414, 40.08841778854189], [-82.94411593464677, 40.088362740346824], [-82.94416169587284, 40.08830485116808], [-82.94420158638776, 40.08824445434692], [-82.94423537745286, 40.088181900189056], [-82.94426286972617, 40.08811755149699], [-82.94428390967737, 40.088051783507844], [-82.94429836961362, 40.087984977664306], [-82.9443061675838, 40.08791751703671], [-82.94433129298024, 40.08762724193942], [-82.94433842188164, 40.087552725769754], [-82.94435233874759, 40.087478778341676], [-82.94437297669235, 40.08740576104923], [-82.94440023366157, 40.087334036318744], [-82.94443397941052, 40.087263958576756], [-82.94447404024432, 40.08719587160585], [-82.9445202260094, 40.087130112045244], [-82.94457230307391, 40.087067001387574], [-82.94498485973816, 40.08661939573089], [-82.94503739939148, 40.08655741966752], [-82.94508441394382, 40.0864928761507], [-82.94512569190088, 40.08642606048632], [-82.94516104640519, 40.08635726968788], [-82.94519031881647, 40.08628681236912], [-82.94521337634933, 40.08621500605139], [-82.94523012028607, 40.08614217803285], [-82.94524046593376, 40.08606864835269], [-82.9452572582532, 40.085761550415754], [-82.9452705755432, 40.08551826017129], [-82.94527888305808, 40.08536653659045], [-82.94528497429039, 40.085319974595876], [-82.94529389179402, 40.08527367928192], [-82.94530561630792, 40.08522775609205], [-82.94531803411499, 40.08518261920658], [-82.94532698173332, 40.08513700283196], [-82.94533243669727, 40.08509105925685], [-82.94535322609467, 40.084833551549174], [-82.94536194031254, 40.08474137189961], [-82.94537713223627, 40.084649691858765], [-82.94539875898712, 40.08455877636538], [-82.94542675658865, 40.084468891337764], [-82.94546345482323, 40.08434572646989], [-82.94548531944177, 40.084272344894536], [-82.94559619900711, 40.08429254048689], [-82.9461455730546, 40.084261633730854], [-82.94637642710703, 40.08430467915041], [-82.9467189368697, 40.08437708209604], [-82.9475761847425, 40.084556010892044], [-82.95028394620356, 40.085046835613504], [-82.95028334995777, 40.08506353697875]]], "type": "Polygon"}, "id": "34", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007115", "GEOID_2": "3918000", "ID": 35, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 449357.3171993495, "mc_ratio": 0.430460750853242, "p_sim": 0.022, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.92812399804609, 40.08830955221178, -82.9257486089179, 40.09201800000001], "geometry": {"coordinates": [[[-82.927708, 40.09201800000001], [-82.927659, 40.09201800000001], [-82.92759999999998, 40.09199300000001], [-82.92755699999998, 40.09198800000001], [-82.927509, 40.091968], [-82.927409, 40.09197100000001], [-82.92730399999999, 40.091969999999996], [-82.927233, 40.09196], [-82.92715899999999, 40.09194299999999], [-82.92704699999999, 40.091930000000005], [-82.92692400000001, 40.091928], [-82.926796, 40.09190099999999], [-82.926715, 40.09188], [-82.92663799999998, 40.09185], [-82.926615, 40.091840999999995], [-82.926451, 40.091782], [-82.926131, 40.091699], [-82.92592779183019, 40.09162565269865], [-82.92593135061095, 40.09160692066997], [-82.9257486089179, 40.091537444271886], [-82.925757, 40.091485], [-82.92580200251145, 40.09118867605734], [-82.92589405407294, 40.0909110492649], [-82.92601501411124, 40.09093040362094], [-82.92631875657558, 40.090007761749625], [-82.92646769180926, 40.089555345417025], [-82.92684863524943, 40.08839814690496], [-82.92682930614498, 40.0883932763582], [-82.92683842428082, 40.08836494170557], [-82.92686024628983, 40.08836239121099], [-82.92687258707095, 40.08833489592704], [-82.92704833915752, 40.08830955221178], [-82.92734574784988, 40.088325970277744], [-82.92784670915039, 40.08835361783947], [-82.92812399804609, 40.08838005885609], [-82.92805864836001, 40.088712787092064], [-82.92799856063486, 40.08904610129745], [-82.92794374635373, 40.08937995010394], [-82.92789421701696, 40.08971428484449], [-82.92784997592875, 40.09004905868227], [-82.92781102753281, 40.090384219372105], [-82.92777738332548, 40.09071971734418], [-82.92779539622543, 40.09197768100021], [-82.92779548138616, 40.091993838475155], [-82.927708, 40.09201800000001]]], "type": "Polygon"}, "id": "35", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007120", "GEOID_2": "3918000", "ID": 36, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 91694.19621901568, "mc_ratio": 0.649507119386637, "p_sim": 0.012, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.92826599999998, 40.080891847185626, -82.92515427924533, 40.084375112753854], "geometry": {"coordinates": [[[-82.92669999999998, 40.08166700000001], [-82.927239, 40.08165000000001], [-82.92716941120167, 40.080910297506335], [-82.92718533008744, 40.080909785193455], [-82.92772398582835, 40.08089244675633], [-82.92774261694474, 40.080891847185626], [-82.927746, 40.08156], [-82.927746, 40.081632], [-82.92826599999998, 40.081616999999994], [-82.92825799999999, 40.08169399999999], [-82.9282628109914, 40.08169338769202], [-82.92819646372824, 40.08245071434548], [-82.928177, 40.082521], [-82.92819027910713, 40.082521308816446], [-82.92818970041066, 40.082527914354195], [-82.92826221426122, 40.0825303859466], [-82.92825799999999, 40.08256999999999], [-82.928132, 40.083338], [-82.928026, 40.08370099999999], [-82.92802443485448, 40.08370640686766], [-82.92792791195076, 40.08370108731859], [-82.92789005085412, 40.08383383873161], [-82.92775747056318, 40.08429871508153], [-82.92773568084084, 40.084375112753854], [-82.9275565240343, 40.08437049053123], [-82.92706313264706, 40.08435705470187], [-82.92686271942668, 40.08435159722649], [-82.92666659826172, 40.084346255320455], [-82.92643912772479, 40.08434005955972], [-82.92626059103942, 40.08433519535282], [-82.9260820168603, 40.08433033101072], [-82.92590344505118, 40.08432546638885], [-82.92572487209458, 40.08432060149998], [-82.92554629692313, 40.0843157534595], [-82.92536772295458, 40.084310906044095], [-82.92515427924533, 40.08430510914723], [-82.9252349064968, 40.08353171703732], [-82.92542414102556, 40.08171639536059], [-82.92589039234575, 40.08170101060413], [-82.92616006909495, 40.08169211150405], [-82.9264334229918, 40.08168309127336], [-82.92638501331105, 40.080935538409705], [-82.92665634264473, 40.08092680941739], [-82.92669999999998, 40.08166700000001]]], "type": "Polygon"}, "id": "36", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007120", "GEOID_2": "3918000", "ID": 37, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 131688.89374917437, "mc_ratio": 0.649507119386637, "p_sim": 0.012, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.92643465872246, 40.08795721785582, -82.925387728542, 40.0889189708257], "geometry": {"coordinates": [[[-82.92591247716358, 40.08814215770262], [-82.92597217262555, 40.088156218729786], [-82.9263672836547, 40.08823332290101], [-82.92638895223205, 40.08823995923295], [-82.92640764533323, 40.088250676192374], [-82.92642209093215, 40.088264742599236], [-82.92643130640816, 40.08828120197317], [-82.92643465872246, 40.08829893355564], [-82.92643192349934, 40.088316725945184], [-82.92623282405721, 40.0889189708257], [-82.92551782277431, 40.088780496302775], [-82.92551924819917, 40.08877393112994], [-82.92552292808482, 40.08867060209741], [-82.9255208258987, 40.08856724625677], [-82.92551294519957, 40.08846405722522], [-82.92549929655378, 40.088361224090704], [-82.9254799116163, 40.08825893316229], [-82.92545482090738, 40.0881573770565], [-82.92542407369052, 40.0880567456195], [-82.925387728542, 40.08795721785582], [-82.92565413291139, 40.08800914620217], [-82.92565530039371, 40.088010230808024], [-82.92569955141904, 40.08804406216145], [-82.92574786998468, 40.08807444115385], [-82.92579979466691, 40.08810107765514], [-82.92585483495823, 40.0881237194664], [-82.92591247716358, 40.08814215770262]]], "type": "Polygon"}, "id": "37", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007120", "GEOID_2": "3918000", "ID": 38, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 10247.259960230556, "mc_ratio": 0.649507119386637, "p_sim": 0.012, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.94901803513108, 40.108871145607324, -82.94661527969272, 40.11075100000001], "geometry": {"coordinates": [[[-82.94854340445772, 40.110610279348506], [-82.9485518984017, 40.11046614097923], [-82.94831587621228, 40.11045597710449], [-82.94830579768913, 40.1106495396209], [-82.94830299999998, 40.11065], [-82.94825999999999, 40.110654000000004], [-82.947817, 40.11069399999999], [-82.947782, 40.110698000000006], [-82.947651, 40.11071400000001], [-82.947539, 40.110727000000004], [-82.947259, 40.110746], [-82.94697799999999, 40.11075100000001], [-82.94697746600208, 40.11074405802815], [-82.94697870552525, 40.110731452116276], [-82.94697648953435, 40.11073136394755], [-82.946976, 40.110725], [-82.94661527969272, 40.11071112614204], [-82.94665125395528, 40.110258547810425], [-82.94665539157522, 40.11022825124263], [-82.94666515481786, 40.11019872403386], [-82.94668034354903, 40.11017058115171], [-82.94670064249478, 40.11014440738004], [-82.94672563054932, 40.11012074557617], [-82.94675478774361, 40.11010008583738], [-82.94678750927373, 40.1100828582431], [-82.94682311716582, 40.11006942290445], [-82.94686086955471, 40.110060053718165], [-82.94686859602162, 40.110058115088], [-82.94687641907164, 40.1100564210534], [-82.94688432579125, 40.11005496986218], [-82.94690489902933, 40.11005226013046], [-82.94692571312571, 40.110051069691664], [-82.94694658166664, 40.110051410962], [-82.94726307832441, 40.1100620118386], [-82.94730534356043, 40.10940916404552], [-82.94731226604476, 40.10937734024062], [-82.94732529626643, 40.109346666684], [-82.94734414426347, 40.10931783253477], [-82.94736838487468, 40.10929147793282], [-82.9473974800598, 40.109268199317654], [-82.94743077516657, 40.109248516120736], [-82.94746752120344, 40.10923286888006], [-82.94750690057921, 40.109221609235796], [-82.94754802351395, 40.1092149891371], [-82.94758997610322, 40.10921315705722], [-82.9483401133946, 40.109255538536715], [-82.94837932136237, 40.10925678768428], [-82.94841822726747, 40.10925286222343], [-82.94845568474409, 40.10924387820033], [-82.94849058356975, 40.10923009922305], [-82.94852189305693, 40.10921193539539], [-82.94854868653304, 40.10918991980729], [-82.94857017183561, 40.10916470841828], [-82.94858571687111, 40.10913704213418], [-82.94859486130221, 40.10910774045803], [-82.94859733157891, 40.10907766811008], [-82.94864666413957, 40.10914890469014], [-82.94864881569991, 40.109117977987545], [-82.94881721704168, 40.108871145607324], [-82.94901803513108, 40.10887897253807], [-82.94900392519598, 40.10945276347295], [-82.94897754178743, 40.11052559358894], [-82.94870985810931, 40.110581592668076], [-82.9487098581093, 40.110581592668076], [-82.94867699999999, 40.110581999999994], [-82.94854340445772, 40.110610279348506]]], "type": "Polygon"}, "id": "38", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007114", "GEOID_2": "3918000", "ID": 39, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 47332.28398800515, "mc_ratio": 0.4375, "p_sim": 0.012, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.94532297337715, 40.10206133900772, -82.94367511848512, 40.104017948401214], "geometry": {"coordinates": [[[-82.94391399999999, 40.103832999999995], [-82.94367511848512, 40.10378787935403], [-82.94382714684836, 40.10206133900772], [-82.94475740378479, 40.10249521864623], [-82.94482849340831, 40.102527108437165], [-82.94490238962292, 40.10255497988708], [-82.94497871382785, 40.1025786849236], [-82.94505706412647, 40.10259810078006], [-82.94513703291865, 40.10261312992929], [-82.94521820682539, 40.102623688375935], [-82.945300159786, 40.10262972639667], [-82.94532297337715, 40.102630137132955], [-82.94519203383828, 40.104017948401214], [-82.944316, 40.103909], [-82.94391399999999, 40.103832999999995]]], "type": "Polygon"}, "id": "39", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007114", "GEOID_2": "3918000", "ID": 40, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 38049.682478931245, "mc_ratio": 0.4375, "p_sim": 0.012, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.94989684021645, 40.09815164017592, -82.94812642028947, 40.09907107757229], "geometry": {"coordinates": [[[-82.94886174488649, 40.09815164017592], [-82.94984586294392, 40.098200929266056], [-82.94986482192986, 40.098205919924794], [-82.94988068080018, 40.09821533630126], [-82.94989174664018, 40.098228170794165], [-82.94989684021645, 40.09824305899938], [-82.94989541997536, 40.09825841252331], [-82.94985950900086, 40.09877346738085], [-82.949844827144, 40.09898401261618], [-82.94984158452023, 40.099005344108264], [-82.9498316174131, 40.09902541076131], [-82.94981552999211, 40.099042980037765], [-82.9497943156131, 40.09905697461593], [-82.94976927397154, 40.099066536650064], [-82.94974194106061, 40.09907107757229], [-82.94971399095466, 40.09907032349902], [-82.94930643390884, 40.09904994827265], [-82.94921822651433, 40.09904002202217], [-82.94913121934269, 40.099025100877206], [-82.94904589375369, 40.099005264957036], [-82.94896271371859, 40.09898062596964], [-82.94888214688267, 40.098951319926655], [-82.94870295037748, 40.09886199397788], [-82.94863403866114, 40.09882601574549], [-82.94856151340481, 40.09879450564293], [-82.94848585915193, 40.09876767796019], [-82.94840759539134, 40.098745710831025], [-82.94832724261296, 40.09872875626888], [-82.94824535272305, 40.0987169283434], [-82.94816247152418, 40.09871030422418], [-82.94812766272226, 40.09870780623017], [-82.94812642028947, 40.098701739096285], [-82.94881377323125, 40.09874809496933], [-82.94886174488649, 40.09815164017592]]], "type": "Polygon"}, "id": "40", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007114", "GEOID_2": "3918000", "ID": 41, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 15026.32154142933, "mc_ratio": 0.4375, "p_sim": 0.012, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.94982462781323, 40.098865427029224, -82.94678705712299, 40.10068602869098], "geometry": {"coordinates": [[[-82.94855342002946, 40.09897883421592], [-82.94862086662273, 40.099014737930155], [-82.94869568961191, 40.09905495976936], [-82.94877384481227, 40.09909125211841], [-82.94885498870565, 40.0991234496704], [-82.94893874861663, 40.099151412447554], [-82.94902475781286, 40.09917501305842], [-82.94911262623407, 40.09919414401511], [-82.94920196280874, 40.099208723051305], [-82.94925499102006, 40.099214567105875], [-82.94929237188406, 40.0992186850309], [-82.94970524238387, 40.099237062261594], [-82.94973310644907, 40.09923972864732], [-82.94975941075064, 40.099247274157875], [-82.94978272890272, 40.09925928546986], [-82.94980179600539, 40.09927511448631], [-82.94981557915858, 40.09929390148208], [-82.94982332822806, 40.09931462714368], [-82.94982462781323, 40.0993361691084], [-82.94981476881372, 40.09946945109406], [-82.94979425771706, 40.099745927413], [-82.94971133663951, 40.100309856444824], [-82.94969396860897, 40.10033688692432], [-82.94967138981929, 40.1003615408236], [-82.94964414299406, 40.100383235175386], [-82.94961287212928, 40.10040145056793], [-82.9495783249849, 40.10041575365083], [-82.94954132264597, 40.10042580535712], [-82.9495027478241, 40.10043136545172], [-82.94946351793037, 40.100432299838836], [-82.94938466970348, 40.100434672594794], [-82.94930628268092, 40.100441618598666], [-82.94922880341984, 40.10045309922056], [-82.94917430104552, 40.100461703754654], [-82.94915220064323, 40.10046519335625], [-82.94907701269001, 40.10048171030318], [-82.9490036704893, 40.1005025520538], [-82.94893259431801, 40.10052760533217], [-82.9487052653025, 40.100612909070264], [-82.94863961977144, 40.100636296945225], [-82.94857164052495, 40.10065535458132], [-82.94850181453573, 40.10066994142444], [-82.94843063258187, 40.10067996103647], [-82.94835860666836, 40.100685334911454], [-82.94828624439552, 40.10068602869098], [-82.94821406527173, 40.10068203589121], [-82.94685469411425, 40.10062824456754], [-82.9468437300729, 40.10062571951545], [-82.94683328223108, 40.100622130690084], [-82.94682352569829, 40.100617535064636], [-82.94680616510611, 40.100605136691115], [-82.94679371373299, 40.10058964680443], [-82.94678705712299, 40.10057217428576], [-82.94679492740755, 40.10050626438348], [-82.94679948872209, 40.100453185332924], [-82.94680845823437, 40.10040043806373], [-82.94682179158505, 40.10034823798757], [-82.94683548800968, 40.100307249935874], [-82.94685186326535, 40.10026684880132], [-82.94687087692907, 40.1002271320016], [-82.94696958825843, 40.100047041490015], [-82.94700032564681, 40.099981826356235], [-82.94702584395557, 40.09991529636062], [-82.94704605215546, 40.09984770041916], [-82.94706087797049, 40.099779285574584], [-82.94707026090491, 40.09971030692961], [-82.94707637664257, 40.099638979323096], [-82.94708279106506, 40.09956414092795], [-82.94708537682392, 40.099535924204304], [-82.94708938223162, 40.09950780475106], [-82.94709479582062, 40.09947982313884], [-82.94711183001658, 40.09941817331728], [-82.94713565833024, 40.09935786477137], [-82.94716611356466, 40.09929934213022], [-82.94720297094035, 40.0992430313284], [-82.94724595752386, 40.09918934677516], [-82.9472947615227, 40.09913867780997], [-82.94734902648624, 40.09909139863168], [-82.94740835001086, 40.09904784939096], [-82.94747230381014, 40.099008356828115], [-82.94754042180152, 40.09897320549923], [-82.94761220020489, 40.09894265308638], [-82.94768711506947, 40.09891692042472], [-82.94776461764013, 40.09889620052608], [-82.94784414597396, 40.098880641423584], [-82.94792511447251, 40.09887035972074], [-82.94800692786633, 40.098865427029224], [-82.94808899304026, 40.098865885234304], [-82.94817070482088, 40.098871724934305], [-82.94825147190299, 40.09888290515521], [-82.94833069686084, 40.09889934532139], [-82.94840780312545, 40.09892092605332], [-82.94848222675178, 40.09894748559622], [-82.94855342002946, 40.09897883421592]]], "type": "Polygon"}, "id": "41", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007114", "GEOID_2": "3918000", "ID": 42, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 68730.96396861697, "mc_ratio": 0.4375, "p_sim": 0.012, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.93927761526447, 40.09941499292802, -82.93745206066033, 40.100425428347656], "geometry": {"coordinates": [[[-82.93765171720953, 40.09996281369084], [-82.93752908760558, 40.09981328640455], [-82.93745206066033, 40.09972116756417], [-82.93788074521754, 40.09961844684629], [-82.93832156937381, 40.09951285051035], [-82.93873012266125, 40.09941499292802], [-82.93880440703397, 40.09951104961159], [-82.93927761526447, 40.100122941685306], [-82.9380149000729, 40.100425428347656], [-82.93788475844624, 40.100254347398355], [-82.9378082077397, 40.10015663879146], [-82.93773052654086, 40.10005946029222], [-82.93765171720953, 40.09996281369084]]], "type": "Polygon"}, "id": "42", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007114", "GEOID_2": "3918000", "ID": 43, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 17209.99325439253, "mc_ratio": 0.4375, "p_sim": 0.012, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.16097901609149, 40.060132783241286, -83.15741672001265, 40.06367997016838], "geometry": {"coordinates": [[[-83.160577, 40.060821999999995], [-83.16063899999999, 40.061254999999996], [-83.160706, 40.06173999999999], [-83.16072799999999, 40.061895], [-83.160831, 40.062645999999994], [-83.160851, 40.06278799999999], [-83.16086099999998, 40.062858000000006], [-83.160876, 40.06297299999999], [-83.16094399999999, 40.063503999999995], [-83.16095, 40.06354499999999], [-83.160957, 40.06366499999999], [-83.16097683036206, 40.06366304778843], [-83.16097899587086, 40.06367981627457], [-83.16097901609149, 40.06367997016838], [-83.16097840447733, 40.06367987363852], [-83.16096050341082, 40.06367705808445], [-83.16004792290852, 40.06353350234588], [-83.15768601027128, 40.06316192102792], [-83.15768033494955, 40.06311198951237], [-83.15741761124606, 40.06080043692655], [-83.15741672001265, 40.06079259833037], [-83.16047592326379, 40.060132783241286], [-83.160531, 40.06051200000001], [-83.160577, 40.060821999999995]]], "type": "Polygon"}, "id": "43", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049006241", "GEOID_2": "3918000", "ID": 44, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 152548.54112983326, "mc_ratio": 0.476424093758517, "p_sim": 0.023, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.01669564273996, 40.13386447891508, -83.01241501249244, 40.135528027386954], "geometry": {"coordinates": [[[-83.01270896283057, 40.13540286777993], [-83.01269281870897, 40.135394636462394], [-83.01268053752729, 40.13538310654452], [-83.01250655935688, 40.135079936660645], [-83.01247501857932, 40.13501664072451], [-83.01244996224388, 40.13495165943999], [-83.01243154340789, 40.13488538300221], [-83.0124198670745, 40.13481820901927], [-83.01241501249244, 40.13475054331579], [-83.01241700260441, 40.13468279376169], [-83.01244140453153, 40.13454867636527], [-83.01246367903087, 40.134483102540244], [-83.01249250729394, 40.134419050081625], [-83.01252770677281, 40.13435690523421], [-83.01256907602941, 40.13429703811364], [-83.01261636076987, 40.134239810959876], [-83.01266927956421, 40.13418556541705], [-83.01272751334038, 40.13413462978404], [-83.01279070883766, 40.13408730999388], [-83.0128584926662, 40.1340438868508], [-83.01293045141436, 40.13400462332193], [-83.01308518275587, 40.13393949664201], [-83.01316699606691, 40.133914015911316], [-83.01325113629024, 40.133893480942476], [-83.0133370998321, 40.133878016409014], [-83.01342436526757, 40.133867715542834], [-83.01349000445875, 40.13386462910857], [-83.01355577217468, 40.13386447891508], [-83.015545148262, 40.13394784455811], [-83.01646162085767, 40.13398623732958], [-83.01648768739092, 40.133992812508815], [-83.01651108589894, 40.13400381411087], [-83.0165305612202, 40.13401865325594], [-83.01654699472671, 40.13403940284706], [-83.01655936047891, 40.134061752641635], [-83.01656740859075, 40.134085235428955], [-83.016570969985, 40.13410936383004], [-83.01658787795576, 40.13435779512824], [-83.016646725175, 40.134359925083665], [-83.01669564273996, 40.13497338694046], [-83.01663601071105, 40.1349715063165], [-83.01667358163093, 40.135463384531285], [-83.01661144007748, 40.135528027386954], [-83.01643790388913, 40.13552225819426], [-83.0163449780004, 40.13551307295508], [-83.01625314311191, 40.13549881341133], [-83.01616287147532, 40.1354795522428], [-83.01607462617548, 40.13545539189069], [-83.0159888516361, 40.13542645018909], [-83.01590212071459, 40.13540599801595], [-83.01581391060563, 40.13538969409638], [-83.0157245584931, 40.135377598189336], [-83.01563440263256, 40.13536975654117], [-83.01561061531103, 40.13536914932854], [-83.0133371340462, 40.13531107054009], [-83.01323969710641, 40.135316751526574], [-83.01314277220315, 40.13532629915023], [-83.01304662317752, 40.135339693349245], [-83.01295150783105, 40.1353568906734], [-83.0127469140144, 40.13540700001269], [-83.01272753447603, 40.13540711239368], [-83.01270896283057, 40.13540286777993]]], "type": "Polygon"}, "id": "44", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007044", "GEOID_2": "3918000", "ID": 45, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 95634.37262958601, "mc_ratio": 0.411805315843977, "p_sim": 0.004, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-82.99523929051222, 40.13469234421114, -82.99197398556156, 40.13576766808462], "geometry": {"coordinates": [[[-82.9944289353763, 40.13507547764384], [-82.99441066448942, 40.135343986052], [-82.99506549547819, 40.13514055313904], [-82.99518497736466, 40.13536790839871], [-82.99520714459607, 40.13542655716286], [-82.99522364060364, 40.135486296997065], [-82.99523437625658, 40.13554680766769], [-82.99523929051222, 40.13560775891571], [-82.99523835755267, 40.135668823935156], [-82.99523158671485, 40.13572966946729], [-82.99518432527191, 40.13576766808462], [-82.99438411634927, 40.1357341848808], [-82.99268828749196, 40.135663207772204], [-82.99204398371583, 40.1356362342649], [-82.99197398556156, 40.1355545631701], [-82.99200639608092, 40.13511226001534], [-82.99204145321218, 40.135113540835945], [-82.99203996294057, 40.134913875728195], [-82.99202045627433, 40.13471475156204], [-82.99230475953028, 40.13469234421114], [-82.9930590972874, 40.13472399213342], [-82.99303736220992, 40.13501724964726], [-82.9944289353763, 40.13507547764384]]], "type": "Polygon"}, "id": "45", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007044", "GEOID_2": "3918000", "ID": 46, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 37208.85261023169, "mc_ratio": 0.411805315843977, "p_sim": 0.004, "quadrant": "High-high"}, "type": "Feature"}, {"bbox": [-83.01681447630556, 40.13553370315417, -83.01169899322974, 40.13666267927718], "geometry": {"coordinates": [[[-83.01206050991094, 40.136495370666374], [-83.01200249915254, 40.13648296080138], [-83.0119463816803, 40.13646618559815], [-83.01189271609664, 40.13644521284092], [-83.01184203428105, 40.136420246454826], [-83.01179483911642, 40.136391536422224], [-83.01175159502228, 40.13635936801625], [-83.01171273378795, 40.13632405727247], [-83.01170323564746, 40.13631138760878], [-83.01169983844855, 40.1363019731712], [-83.01169899322974, 40.136292226121945], [-83.0117007346355, 40.13628254797504], [-83.01170796710672, 40.13626901211813], [-83.01171560909248, 40.136261198651674], [-83.01172514543416, 40.1362547287357], [-83.01173618616615, 40.13624986523813], [-83.01231565256096, 40.13583504250634], [-83.01238964376952, 40.13578916373985], [-83.01243308970128, 40.13576532311731], [-83.01246702067925, 40.13574670414123], [-83.01254751682917, 40.13570780715872], [-83.0126308528208, 40.13567261179442], [-83.01271674327133, 40.13564124086638], [-83.01280488504663, 40.135613796557045], [-83.01289497733455, 40.13559037743715], [-83.01298670982452, 40.13557106680944], [-83.01308635092565, 40.13555463684048], [-83.01318711332588, 40.1355429083989], [-83.01328861950871, 40.135535920053414], [-83.01339049542464, 40.13553370315417], [-83.01410664792488, 40.13555913269914], [-83.01482115074198, 40.1355844957601], [-83.01553494051322, 40.13560983239171], [-83.01553640866773, 40.135581003349515], [-83.01571385560536, 40.13559842392363], [-83.015823159551, 40.135618676397726], [-83.01593127719258, 40.13564238324775], [-83.01602683715686, 40.135666664723395], [-83.01603802169126, 40.13566950567028], [-83.01614321085368, 40.13569999853818], [-83.01625521919199, 40.135720026206165], [-83.01636852075457, 40.13573518668538], [-83.01648275259156, 40.13574543203277], [-83.01659755301915, 40.13575072690948], [-83.01671256284735, 40.13575105578008], [-83.0167242342635, 40.135754826638085], [-83.0167347097172, 40.13576028775931], [-83.01674358397295, 40.135767224781354], [-83.01675050295117, 40.13577536007577], [-83.01675522257585, 40.13578437680532], [-83.01675755250848, 40.13579392637584], [-83.0167867366042, 40.13620889900639], [-83.01681447630556, 40.136603374091486], [-83.01681293796221, 40.136615169620164], [-83.01680836996451, 40.13662649483888], [-83.01680095900767, 40.13663689502794], [-83.01679103304532, 40.136645976087486], [-83.01677895889291, 40.13665336265913], [-83.01676521313208, 40.136658765359556], [-83.01674267351527, 40.13666267927718], [-83.01611119183245, 40.13664030666944], [-83.01548528675016, 40.13661812778533], [-83.01548452654518, 40.13663597367605], [-83.01476617281077, 40.13660438133683], [-83.01405035976255, 40.13657289779446], [-83.01332631928098, 40.13654104503405], [-83.01237755026764, 40.13651135555832], [-83.01211984159087, 40.13650329069812], [-83.01206050991094, 40.136495370666374]]], "type": "Polygon"}, "id": "46", "properties": {"ALAND": 573766759, "AWATER": 15170967, "CLASSFP": "C6", "FUNCSTAT": "A", "GEOIDFQ": "1600000US3918000", "GEOID_1": "39049007044", "GEOID_2": "3918000", "ID": 47, "INTPTLAT": "+39.9839384", "INTPTLON": "-082.9848818", "LSAD": "25", "MTFCC": "G4110", "NAME": "Columbus", "NAMELSAD": "Columbus city", "PCICBSA": "Y", "PLACEFP": "18000", "PLACENS": "01086101", "STATEFP": "39", "area": 74491.48160816604, "mc_ratio": 0.411805315843977, "p_sim": 0.004, "quadrant": "High-high"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_8c6c4cca5325bf0dc6f93361f145637f.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["ID"];
+    let aliases = ["Candidate ID"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_8c6c4cca5325bf0dc6f93361f145637f.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["ID"];
+    let aliases = ["Candidate ID"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_8c6c4cca5325bf0dc6f93361f145637f.addTo(feature_group_abf72bf2c4519ea9ad22f503553c7a36);
+        
+    
+            feature_group_abf72bf2c4519ea9ad22f503553c7a36.addTo(map_53db340858135a28538143cc65a828ab);
+        
+    
+            var layer_control_559e47688158b326f77498e91f5b184f_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0325ae502054fd9cddcbcaf3a370df4b,
+                },
+                overlays :  {
+                    "Existing Walmart Locations" : feature_group_e2e56b6d53197fd8ab02208569761ddd,
+                    "Potential Walmart Locations" : feature_group_abf72bf2c4519ea9ad22f503553c7a36,
+                },
+            };
+            let layer_control_559e47688158b326f77498e91f5b184f = L.control.layers(
+                layer_control_559e47688158b326f77498e91f5b184f_layers.base_layers,
+                layer_control_559e47688158b326f77498e91f5b184f_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_53db340858135a28538143cc65a828ab);
+
+        
+</script>
+</html>
