@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_22237b7875c4558a0b3efe07b3bf6052 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_22237b7875c4558a0b3efe07b3bf6052" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_22237b7875c4558a0b3efe07b3bf6052 = L.map(
+                "map_22237b7875c4558a0b3efe07b3bf6052",
+                {
+                    center: [40.02492815489461, -82.99786312028706],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8e4b1b06117cb69463a6c34cbef7e528 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8e4b1b06117cb69463a6c34cbef7e528.addTo(map_22237b7875c4558a0b3efe07b3bf6052);
+        
+    
+            var marker_290e47ca5f1e4d9f5608e85e513fd1f4 = L.marker(
+                [39.91579659958505, -83.06639208545575],
+                {
+}
+            ).addTo(map_22237b7875c4558a0b3efe07b3bf6052);
+        
+    
+            var icon_a11535cb8228f8ac0cc4b3523276e759 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_290e47ca5f1e4d9f5608e85e513fd1f4.setIcon(icon_a11535cb8228f8ac0cc4b3523276e759);
+        
+    
+        var popup_56a3669e9d3fb9f4b1d5be8bab6e3502 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_62636d81c13c5e4a88b0d81c5e15ad59 = $(`<div id="html_62636d81c13c5e4a88b0d81c5e15ad59" style="width: 100.0%; height: 100.0%;">Huff Demand: 11509</div>`)[0];
+                popup_56a3669e9d3fb9f4b1d5be8bab6e3502.setContent(html_62636d81c13c5e4a88b0d81c5e15ad59);
+            
+        
+
+        marker_290e47ca5f1e4d9f5608e85e513fd1f4.bindPopup(popup_56a3669e9d3fb9f4b1d5be8bab6e3502)
+        ;
+
+        
+    
+    
+            marker_290e47ca5f1e4d9f5608e85e513fd1f4.bindTooltip(
+                `<div>
+                     Walmart 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bf92c7c033836472619ccaec7c43b4ff = L.marker(
+                [40.002670946324244, -83.15211401987621],
+                {
+}
+            ).addTo(map_22237b7875c4558a0b3efe07b3bf6052);
+        
+    
+            var icon_2c56e69b3eeea3c84af373e952b8f5c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bf92c7c033836472619ccaec7c43b4ff.setIcon(icon_2c56e69b3eeea3c84af373e952b8f5c9);
+        
+    
+        var popup_d4fbc50079fafa1a1eb582fdc76ace71 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_355a0488f9dbf1a5c9a487bac7c1610d = $(`<div id="html_355a0488f9dbf1a5c9a487bac7c1610d" style="width: 100.0%; height: 100.0%;">Huff Demand: 8422</div>`)[0];
+                popup_d4fbc50079fafa1a1eb582fdc76ace71.setContent(html_355a0488f9dbf1a5c9a487bac7c1610d);
+            
+        
+
+        marker_bf92c7c033836472619ccaec7c43b4ff.bindPopup(popup_d4fbc50079fafa1a1eb582fdc76ace71)
+        ;
+
+        
+    
+    
+            marker_bf92c7c033836472619ccaec7c43b4ff.bindTooltip(
+                `<div>
+                     Walmart 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f52843ada3da604c74184332331298f8 = L.marker(
+                [39.9844705386889, -82.80857329979176],
+                {
+}
+            ).addTo(map_22237b7875c4558a0b3efe07b3bf6052);
+        
+    
+            var icon_198d1f8ea6101cc15a521d3703c6f0fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f52843ada3da604c74184332331298f8.setIcon(icon_198d1f8ea6101cc15a521d3703c6f0fb);
+        
+    
+        var popup_c9058a1ddc607b958f8fc6645aebfcde = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_eb27b09cf9a1de1f903bd446dc0f0ab5 = $(`<div id="html_eb27b09cf9a1de1f903bd446dc0f0ab5" style="width: 100.0%; height: 100.0%;">Huff Demand: 10993</div>`)[0];
+                popup_c9058a1ddc607b958f8fc6645aebfcde.setContent(html_eb27b09cf9a1de1f903bd446dc0f0ab5);
+            
+        
+
+        marker_f52843ada3da604c74184332331298f8.bindPopup(popup_c9058a1ddc607b958f8fc6645aebfcde)
+        ;
+
+        
+    
+    
+            marker_f52843ada3da604c74184332331298f8.bindTooltip(
+                `<div>
+                     Walmart 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2f15ea321954cede8ef27fa20f659966 = L.marker(
+                [40.087041351961666, -82.94762236738435],
+                {
+}
+            ).addTo(map_22237b7875c4558a0b3efe07b3bf6052);
+        
+    
+            var icon_2a8175ebbfb7445ca93e0659efa5700c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2f15ea321954cede8ef27fa20f659966.setIcon(icon_2a8175ebbfb7445ca93e0659efa5700c);
+        
+    
+        var popup_2f1cf7df9a8b60e705eac69ba9ad699e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fc0b16ea3a81dc59543d174c2bcef1bc = $(`<div id="html_fc0b16ea3a81dc59543d174c2bcef1bc" style="width: 100.0%; height: 100.0%;">Huff Demand: 12188</div>`)[0];
+                popup_2f1cf7df9a8b60e705eac69ba9ad699e.setContent(html_fc0b16ea3a81dc59543d174c2bcef1bc);
+            
+        
+
+        marker_2f15ea321954cede8ef27fa20f659966.bindPopup(popup_2f1cf7df9a8b60e705eac69ba9ad699e)
+        ;
+
+        
+    
+    
+            marker_2f15ea321954cede8ef27fa20f659966.bindTooltip(
+                `<div>
+                     Walmart 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8414a17b665e3caa4208655213e5566a = L.marker(
+                [40.134661337913215, -83.0146138289273],
+                {
+}
+            ).addTo(map_22237b7875c4558a0b3efe07b3bf6052);
+        
+    
+            var icon_cd281f42cd73effaac089f2fa5cddaa6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8414a17b665e3caa4208655213e5566a.setIcon(icon_cd281f42cd73effaac089f2fa5cddaa6);
+        
+    
+        var popup_413147019089b422e8251550409a949d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f1a12de01f1aeb4d8cd23845319a33e2 = $(`<div id="html_f1a12de01f1aeb4d8cd23845319a33e2" style="width: 100.0%; height: 100.0%;">Huff Demand: 8262</div>`)[0];
+                popup_413147019089b422e8251550409a949d.setContent(html_f1a12de01f1aeb4d8cd23845319a33e2);
+            
+        
+
+        marker_8414a17b665e3caa4208655213e5566a.bindPopup(popup_413147019089b422e8251550409a949d)
+        ;
+
+        
+    
+    
+            marker_8414a17b665e3caa4208655213e5566a.bindTooltip(
+                `<div>
+                     Walmart 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
