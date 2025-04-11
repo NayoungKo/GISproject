@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b7dc3fc5708d06581bb0a34fddf94c44 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b7dc3fc5708d06581bb0a34fddf94c44" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b7dc3fc5708d06581bb0a34fddf94c44 = L.map(
+                "map_b7dc3fc5708d06581bb0a34fddf94c44",
+                {
+                    center: [40.02492815489461, -82.99786312028706],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f6ae3a0a32a0894f93c6217e9a0bf4bf = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f6ae3a0a32a0894f93c6217e9a0bf4bf.addTo(map_b7dc3fc5708d06581bb0a34fddf94c44);
+        
+    
+            var marker_b7d1a4243d3085b486b02c5b3258e045 = L.marker(
+                [39.91579659958505, -83.06639208545575],
+                {
+}
+            ).addTo(map_b7dc3fc5708d06581bb0a34fddf94c44);
+        
+    
+            var icon_4de18ad0b9e11d149cac911122f2e247 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b7d1a4243d3085b486b02c5b3258e045.setIcon(icon_4de18ad0b9e11d149cac911122f2e247);
+        
+    
+        var popup_7bb9f261a54360fc2b279d22b39d0056 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e6e8b56b93b3782db8c7c527d7993b18 = $(`<div id="html_e6e8b56b93b3782db8c7c527d7993b18" style="width: 100.0%; height: 100.0%;"><b>Huff Demand:</b> 11509<br><b>Estimated Revenue:</b> $41,642,099</div>`)[0];
+                popup_7bb9f261a54360fc2b279d22b39d0056.setContent(html_e6e8b56b93b3782db8c7c527d7993b18);
+            
+        
+
+        marker_b7d1a4243d3085b486b02c5b3258e045.bindPopup(popup_7bb9f261a54360fc2b279d22b39d0056)
+        ;
+
+        
+    
+    
+            marker_b7d1a4243d3085b486b02c5b3258e045.bindTooltip(
+                `<div>
+                     Walmart 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b4fed7b55b03ea2b030deac402c1c00f = L.marker(
+                [40.002670946324244, -83.15211401987621],
+                {
+}
+            ).addTo(map_b7dc3fc5708d06581bb0a34fddf94c44);
+        
+    
+            var icon_a2d2a8c5ee53b1238d5e1b712205c0f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b4fed7b55b03ea2b030deac402c1c00f.setIcon(icon_a2d2a8c5ee53b1238d5e1b712205c0f5);
+        
+    
+        var popup_7136cf0d2259f77e0b7925138ab6f6cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bcf47c4a254a6b8d51b021262b8b819e = $(`<div id="html_bcf47c4a254a6b8d51b021262b8b819e" style="width: 100.0%; height: 100.0%;"><b>Huff Demand:</b> 8422<br><b>Estimated Revenue:</b> $30,473,061</div>`)[0];
+                popup_7136cf0d2259f77e0b7925138ab6f6cb.setContent(html_bcf47c4a254a6b8d51b021262b8b819e);
+            
+        
+
+        marker_b4fed7b55b03ea2b030deac402c1c00f.bindPopup(popup_7136cf0d2259f77e0b7925138ab6f6cb)
+        ;
+
+        
+    
+    
+            marker_b4fed7b55b03ea2b030deac402c1c00f.bindTooltip(
+                `<div>
+                     Walmart 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5d0444251fd07cabb2bc2d3842402811 = L.marker(
+                [39.9844705386889, -82.80857329979176],
+                {
+}
+            ).addTo(map_b7dc3fc5708d06581bb0a34fddf94c44);
+        
+    
+            var icon_9356c0a7553c4d2ba93ffec8a639021f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5d0444251fd07cabb2bc2d3842402811.setIcon(icon_9356c0a7553c4d2ba93ffec8a639021f);
+        
+    
+        var popup_2371a31fe178b5dac691cf7d848c5d2c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_20343152d2421ff6e51a73c3717a63c6 = $(`<div id="html_20343152d2421ff6e51a73c3717a63c6" style="width: 100.0%; height: 100.0%;"><b>Huff Demand:</b> 10993<br><b>Estimated Revenue:</b> $39,775,316</div>`)[0];
+                popup_2371a31fe178b5dac691cf7d848c5d2c.setContent(html_20343152d2421ff6e51a73c3717a63c6);
+            
+        
+
+        marker_5d0444251fd07cabb2bc2d3842402811.bindPopup(popup_2371a31fe178b5dac691cf7d848c5d2c)
+        ;
+
+        
+    
+    
+            marker_5d0444251fd07cabb2bc2d3842402811.bindTooltip(
+                `<div>
+                     Walmart 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_71789a4ffd884a6f6ff7c720c4020154 = L.marker(
+                [40.087041351961666, -82.94762236738435],
+                {
+}
+            ).addTo(map_b7dc3fc5708d06581bb0a34fddf94c44);
+        
+    
+            var icon_e1d69c789e55a51e3545e8f7794eecac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_71789a4ffd884a6f6ff7c720c4020154.setIcon(icon_e1d69c789e55a51e3545e8f7794eecac);
+        
+    
+        var popup_769d08674dca9e96f1e02c1019de71ac = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8e41aab607100d540bf28615f3dc037d = $(`<div id="html_8e41aab607100d540bf28615f3dc037d" style="width: 100.0%; height: 100.0%;"><b>Huff Demand:</b> 12188<br><b>Estimated Revenue:</b> $44,096,301</div>`)[0];
+                popup_769d08674dca9e96f1e02c1019de71ac.setContent(html_8e41aab607100d540bf28615f3dc037d);
+            
+        
+
+        marker_71789a4ffd884a6f6ff7c720c4020154.bindPopup(popup_769d08674dca9e96f1e02c1019de71ac)
+        ;
+
+        
+    
+    
+            marker_71789a4ffd884a6f6ff7c720c4020154.bindTooltip(
+                `<div>
+                     Walmart 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7363d72b66d49aa2ebcbd93e37a6a29e = L.marker(
+                [40.134661337913215, -83.0146138289273],
+                {
+}
+            ).addTo(map_b7dc3fc5708d06581bb0a34fddf94c44);
+        
+    
+            var icon_81e979214196eac7af494efe16cb87b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7363d72b66d49aa2ebcbd93e37a6a29e.setIcon(icon_81e979214196eac7af494efe16cb87b7);
+        
+    
+        var popup_b6bd443f95fabe6e8d25e06e3ed4f255 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_44be3900556432ebc2b84c86567074ed = $(`<div id="html_44be3900556432ebc2b84c86567074ed" style="width: 100.0%; height: 100.0%;"><b>Huff Demand:</b> 8262<br><b>Estimated Revenue:</b> $29,894,925</div>`)[0];
+                popup_b6bd443f95fabe6e8d25e06e3ed4f255.setContent(html_44be3900556432ebc2b84c86567074ed);
+            
+        
+
+        marker_7363d72b66d49aa2ebcbd93e37a6a29e.bindPopup(popup_b6bd443f95fabe6e8d25e06e3ed4f255)
+        ;
+
+        
+    
+    
+            marker_7363d72b66d49aa2ebcbd93e37a6a29e.bindTooltip(
+                `<div>
+                     Walmart 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
